@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.main-sec {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+}
+
+.main-sec > div {
+  display: flex;
+  flex-direction: row;
+  margin: 0.8rem 0;
+}
+
+.Bcard {
+  margin: 0 1rem;
+  max-width: 60%;
+  padding: 12px;
+  /* background: yellow; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px gray;
+}
+.Scard {
+  border-radius: 10px;
+  margin: 0 1rem;
+  max-width: 40%;
+  padding: 12px;
+  box-shadow: 0px 0px 5px;
+}
+.Bcard > div,
+.Scard > div {
+  margin: 10px 0;
+}
+.row-1 > .Bcard {
+  background: hsl(263, 55%, 52%);
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.row-1 > .Scard {
+  background: hsl(217, 19%, 35%);
+}
+.row-2 > .Scard {
+  background: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.row-2 > .Bcard {
+  background: hsl(219, 29%, 14%);
+}
+.img-container {
+  display: flex;
+  flex-direction: row;
+}
+.name {
+  margin-left: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.img-container > img {
+  position: relative;
+  border-radius: 50%;
+  border: 3px solid hsl(0, 0%, 81%);
+}
+/* side section */
+.side-sec {
+  max-width: 25%;
+  color: black;
+  box-shadow: 0px 0px 5px 5px gray;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.text-muted {
+  opacity: 50%;
+  margin: 10px 0;
+}
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-sec {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .main-sec > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-container > img {
+    width: 12%;
+  }
+  .row-1 > div,
+  .row-2 > div {
+    width: 100%;
+  }
+  .row-1 > div {
+    margin: 10px 0;
+  }
+  .row-2 > div {
+    margin: 10px 0;
+  }
+  .row-1 > .Bcard,
+  .row-1 > .Scard,
+  .row-2 > .Scard,
+  .row-2 > .Bcard {
+    width: 100%;
+    max-width: 80%;
+  }
+  .side-sec {
+    max-width: 80%;
+    color: black;
+    box-shadow: 0px 0px 5px 5px gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 10px;
+  }
+}
